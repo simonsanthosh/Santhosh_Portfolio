@@ -84,4 +84,27 @@ contactOpt.addEventListener('click', () => {
     mobNavBar.style.display = 'none'
 })
 
+// Function to hide the loader and display the content
+function hideLoader() {
+    const loader = document.querySelector('.loader-wrapper');
+    loader.style.transition = 'opacity 3s ease-in-out';
+    loader.style.opacity = '0';
+  
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 5000); // Adjust the delay as needed
+  }
+  
+  // Call the function to hide the loader when the page is loaded
+  window.addEventListener('load', hideLoader);
+  
+  // Call the function to initially hide the content
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add code to hide your content initially (if needed)
+    // For example: document.querySelector('.your-content-class').style.display = 'none';
+  });
+  
+  
+  
+  
 

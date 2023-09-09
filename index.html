@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simon Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+ <!-- Loader -->
+  <div class="loader-wrapper">
+   <div class="loader">
+      <div class="loader-inner"></div>
+   </div>
+</div>
+
   <nav class="navbar">
-    <div class="nav-container">
+    <div class="nav-container" data-aos="fade-up" data-aos-duration="1500">
       <div class="navbar-header">
         <!-- <button class="navbar-toggler" data-toggle="open-navbar1">
               <span></span>
@@ -97,13 +105,13 @@
     </div>
   </nav>
   <main class="main">
-    <section class="hero">
+    <section class="hero" data-aos="fade-up" data-aos-duration="3000">
       <p class="intro"> <span class="name">Hi, I’m Santhosh</span></p>
       <p>An <span class="highlight">Innovative UX Designer</span><span> dedicated to crafting user-centric,<br>
           delightful
           experiences and mentoring aspiring UX/UI professionals</span></p>
     </section>
-    <section class="portfolio-works">
+    <section class="portfolio-works" data-aos="fade-up" data-aos-duration="3000">
       <div class="rowOne">
         <img class="imgCard"
           src="https://res.cloudinary.com/dqet71eiu/image/upload/v1691236621/Portfolio_Cards_Image/Drmurs_q3zmfz.png" />
@@ -129,17 +137,17 @@
           src="https://res.cloudinary.com/dqet71eiu/image/upload/v1691236591/Portfolio_Cards_Image/Vandalur_1_pqsqob.png" />
       </div>
     </section>
-    <section class="featured-projects">
+    <section class="featured-projects" data-aos="fade-up" data-aos-duration="3000">
       <p class="title">FEATURED PROJECTS</p>
       <p class="bold-title">Case Studies</p>
       <p class="des">Exploring the UX journey behind a <span class="highlight">real-life product</span>,
         showcasing<br />
         design process and insights of product based company</p>
-      <div class="cards">
-        <div class="card cardOne">
+      <div class="cards" >
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span>Revolutionising </span><br />Digital Ads</span></p>
-            <p class="description">Intellemo: Simplify Your Digital Marketing Campaigns with Seamless Publishing Across
+            <p class="description">Intellemo: Simplify your digital marketing campaigns with seamless publishing across
               Facebook, Instagram, Meta, and Google Ads.</p>
             <div class="readMoreBtn">
               <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyOne" /></span>
@@ -150,10 +158,10 @@
           </div>
 
         </div>
-        <div class="card cardTwo">
+        <div class="card cardTwo" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span> Maximising ROI & <br /> Google Search </span></p>
-            <p class="description">Experience Google search with Intellemo's integrated products, and maximising ROI
+            <p class="description">Experience google search with Intellemo's integrated products, and maximising ROI
               through subscription plans.</p>
             <div class="readMoreBtn">
               <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyTwo" /></span>
@@ -164,10 +172,10 @@
           </div>
 
         </div>
-        <div class="card cardThree">
+        <div class="card cardThree" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span>Empowering </span><br />Dreams:DRMURS</span></p>
-            <p class="description">Unlocking Potential: Transforming Goals into Achievements. A small case study with an
+            <p class="description">Unlocking Potential: Transforming goals into achievements. A small case study with an
               idea of future growth of students.</p>
             <div class="readMoreBtn">
               <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyThree" /></span>
@@ -178,7 +186,7 @@
           </div>
 
         </div>
-        <div class="card cardFour">
+        <div class="card cardFour" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span>Streamlining Task </span><br />Management</span></p>
             <p class="description">Effortlessly manage tasks within Gmail using ToDo, the productivity solution designed
@@ -192,10 +200,10 @@
           </div>
 
         </div>
-        <div class="card cardFive">
+        <div class="card cardFive" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span>Queue-Free</span><br />Revolution: RedFoot</span></p>
-            <p class="description">Seamless grocery shopping experience: scan, add, pay – no queues. RedFoot redefines
+            <p class="description">Seamless grocery shopping experience: Scan, add, pay – no queues. RedFoot redefines
               convenience.</p>
             <div class="readMoreBtn">
               <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyFive" /></span>
@@ -206,12 +214,12 @@
           </div>
 
         </div>
-        <div class="card cardSix">
+        <div class="card cardSix" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p class="bold"><span>Seamless Legal </span><br />Analysis Tool</span></p>
-            <p class="description">AI-Powered Legal Risk Assessment: Streamlining Analysis for Accuracy, Minimising
-              Manual
-              Effort.</p>
+            <p class="description">AI-Powered Legal Risk Assessment: Streamlining analysis for accuracy, minimising
+              manual
+              effort.</p>
             <div class="readMoreBtn">
               <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudySix" /></span>
             </div>
@@ -227,18 +235,18 @@
 
     </section>
 
-    <section id="works" class="featured-projects">
+    <section id="works" class="featured-projects" data-aos="fade-up" data-aos-duration="3000">
       <p class="title">CLIENTS PROJECTS</p>
       <p class="bold-title">Creative Ad Campaigns</p>
       <p class="des">Unlocking business growth with<span class="highlight"> Customisable Ad Templates</span> driving
         impressive<br /> reach and conversions</p>
       <div class="cards">
-        <div class="card cardOne">
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/jioImg.png" class="brand_img" />
           <div class="textdiv">
             <p><span class="bold">JioMart Ad Creatives</span></p>
-            <p class="description">Preparing Captivating JioMart Ad Campaigns for Diverse Products. Expected to be
-              released on October in Official Website. </p>
+            <p class="description">Preparing captivating JioMart ad campaigns for diverse products. Expected to be
+              released on October in official website. </p>
             <div class="readMoreBtn">
               <p>View Creative</p><span><a href="./jiomart.html"><img src="./assets/teenyicons.svg" /></a></span>
             </div>
@@ -247,11 +255,11 @@
           <img src="./assets/laptopImg.png"/>
         </div> -->
         </div>
-        <div class="card cardTwo">
+        <div class="card cardTwo" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/ucImg.png" class="brand_img" />
           <div class="textdiv">
             <p><span class="bold"> UC Ad Creatives</span></p>
-            <p class="description">Impactful Urban Company Creatives: Amplifying Reach and Engagement through Meta Ad.
+            <p class="description">Impactful Urban Company Creatives: Amplifying reach and engagement through Meta ad.
             </p>
             <div class="readMoreBtn">
               <p>View Creative</p><span><a href="./uc.html"><img src="./assets/teenyicons.svg" /></a></span>
@@ -261,7 +269,7 @@
           <img src="./assets/laptopImg.png"/>
         </div> -->
         </div>
-        <div class="card cardThree">
+        <div class="card cardThree" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/HOC_1/hoc-logo-3.png" class="brand_img" />
           <div class="textdiv">
             <p><span class="bold">HOC Ad Creatives</span></p>
@@ -275,11 +283,11 @@
           <img src="./assets/laptopImg.png"/>
         </div> -->
         </div>
-        <div class="card cardFour">
+        <div class="card cardFour" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/grImg.png" class="brand_img" />
           <div class="textdiv">
             <p><span class="bold">Other Biz Clients</span></p>
-            <p class="description">Effective Social Media Ad Campaigns Amplifying Reach and Impact.</p>
+            <p class="description">Effective social media ad campaigns amplifying reach and impact.</p>
             <div class="readMoreBtn">
               <p>View Creative</p><span><a href="./obc.html"><img src="./assets/teenyicons.svg" /></a></span>
             </div>
@@ -291,16 +299,16 @@
       </div>
       <!-- <button class="btn">Open PDF</button> -->
     </section>
-    <section class="featured-projects">
+    <section class="featured-projects" data-aos="fade-up" data-aos-duration="3000">
       <p class="title">PERSONAL PROJECTS</p>
       <p class="bold-title">UI & Responsive Works</p>
-      <p class="des">Crafting <span class="highlight">Seamless User Experiences</span> Showcasing my Design Prowess
+      <p class="des">Crafting <span class="highlight">Seamless User Experiences</span> showcasing my design prowess
         through<br /> reach and conversions</p>
       <div class="cards">
-        <div class="card cardOne">
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">Red Planet <br />Expeditions</span></span></p>
-            <p class="description">Explore the future of interplanetary travel with our innovative Mars travel booking
+            <p class="description">Explore the future of interplanetary travel with our innovative mars travel booking
               application.</p>
             <div class="readMoreBtn">
               <p>Read More</p><span><img src="./assets/teenyicons.svg" class="caseStudySeven" /></span>
@@ -311,10 +319,10 @@
           </div>
 
         </div>
-        <div class="card cardTwo">
+        <div class="card cardTwo" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">ZooApp Reimagined <br />Vandalur</span></p>
-            <p class="description">Revolutionizing Vandalur Zoo app: Enhancing visitor experience with advanced ticket
+            <p class="description">Enhancing visitor experience with advanced ticket
               validation and seamless design.</p>
             <div class="readMoreBtn">
               <p>Read More</p><span><img src="./assets/teenyicons.svg" class="caseStudyEight" /></span>
@@ -325,7 +333,7 @@
           </div>
 
         </div>
-        <div class="card cardThree">
+        <div class="card cardThree" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">AI-powered Chatbot <br /> Workspace </span></p>
             <p class="description">Unlock seamless communication with Vini, the chatbot workspace powered by natural
@@ -339,7 +347,7 @@
           </div>
 
         </div>
-        <div class="card cardFour">
+        <div class="card cardFour" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">Comical Shopping <br />Experience</span></p>
             <p class="description">An e-commerce website highlighting exceptional UI design skills through Figma's
@@ -353,7 +361,7 @@
           </div>
 
         </div>
-        <div class="card cardFive">
+        <div class="card cardFive" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">Responsive E-com <br />Experience</span></p>
             <p class="description">Discover the art of responsive design with our intuitive and visually stunning
@@ -368,12 +376,10 @@
           </div>
 
         </div>
-        <div class="card cardSix">
+        <div class="card cardSix" data-aos="fade-up" data-aos-duration="3000">
           <div class="textdiv">
             <p><span class="bold">GlobalCinema: <br />Connect and Watch</span></p>
-            <p class="description">Connect with friends and family around the world, enjoying movies, series, and
-              YouTube
-              videos together in Global Cinema. </p>
+            <p class="description">Connect with friends and family around the world, enjoying movies, series together. </p>
             <div class="readMoreBtn">
               <p>Read More</p><span><img src="./assets/teenyicons.svg" class="caseStudyTwelve" /></span>
             </div>
@@ -387,7 +393,7 @@
       </div>
       <!-- <button class="btn">Open PDF</button> -->
     </section>
-    <footer class="footer" id="footer-sec">
+    <footer class="footer" id="footer-sec" data-aos="fade-up" data-aos-duration="3000">
       <p class="footer-title">Now, thinking of adding a creative mind to your team?</p>
       <p class="footer-title-strong"><strong>Let's discuss and make it happen</strong>.</p>
       <p><a href="mailto:simonsanthosh99@gmail.com" target="_blank" class="title">simonsanthosh99@gmail.com</a></p>
@@ -511,7 +517,14 @@
     document.getElementsByClassName('caseStudyElven')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229835/Presentations/11_hkbapx.png'));
     document.getElementsByClassName('caseStudyTwelve')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229827/Presentations/12_e66ypj.png'));
   </script>
+  
   <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
 </body>
 
 </html>
