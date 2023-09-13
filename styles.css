@@ -115,6 +115,16 @@ body, h1, p {
   0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
 }
 
+.color-change {
+    color: #FF2C5E; /* Initial color */
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.color-change:hover {
+    color: #FF2C5E; /* Color change on hover */
+}
+
 .navbar-menu li:hover + .cursor {
     background: white; /* Change to your desired color */
   }
@@ -342,7 +352,6 @@ a {
     cursor: pointer;
 }
 
-
 .featured-projects .title,
 .footer .title {
     text-align: center;
@@ -350,6 +359,7 @@ a {
     font-size: 20px;
     font-family: Poppins; 
     font-weight: 500;
+    line-height: 54px;
 }
 
 .featured-projects .bold-title {
@@ -391,6 +401,7 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
+    padding-bottom: 1.5rem;
     justify-content: space-between;
     flex: 1;
     /* gap: 20px */
@@ -398,7 +409,22 @@ a {
 }
 
 .card .brand_img {
+    width: 10%;
+    margin-inline: auto;
+}
+
+.card .brand_img_1 {
     width: 30%;
+    margin-inline: auto;
+}
+
+.card .brand_img_2 {
+    width: 30%;
+    margin-inline: auto;
+}
+
+.card .brand_img_3 {
+    width: 25%;
     margin-inline: auto;
 }
 
@@ -427,17 +453,34 @@ a {
     line-height: 48px;
 }
 
+.cardOne_1 {
+    background-color: #FFF1F1;
+    ;
+}
+
+.cardTwo_2 {
+    background-color: #EFE8FF;
+}
+
+.cardThree_3 {
+    background-color: #FFFCE4;
+}
+
+.cardFour_4 {
+    background-color: #EFF3FF;
+}
+
 .cardOne {
-    background-color: #D1FFFF;
+    background-color: #FFF1F1;
     ;
 }
 
 .cardTwo {
-    background-color: #FFE7EE;
+    background-color: #EFE8FF;
 }
 
 .cardThree {
-    background-color: #FFE9FF;
+    background-color: #FFFCE4;
 }
 
 .cardFour {
@@ -454,25 +497,29 @@ a {
 }
 
 .footer {
-    margin-top: 10rem;
+    margin-top: 8rem;
     background-color: #F4F4F4;
-    padding: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer div {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding-top: 40px;
 }
 
 .footer .footer-title {
     color: #2B2B2B;
     text-align: center;
-    /* font-family: Libre Baskerville; */
+    font-family: Libre Baskerville; 
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.625rem;
+    line-height: 4rem;
     margin: 0;
 }
 
@@ -481,6 +528,83 @@ a {
     text-align: center;
     font-size: 14px;
 }
+
+.footer .title-1 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 24px;
+    font-family: Poppins; 
+    font-weight: 500;
+}
+
+.footer .title-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FF2C5E;
+    font-size: 18px;
+    font-family: libre baskerville; 
+    font-weight: 500;
+    gap: 90px;
+    line-height: 80px;
+}
+
+.footer .title-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FF2C5E;
+    font-size: 18px;
+    font-family: libre baskerville; 
+    font-weight: 500;
+    line-height: 1px;
+}
+
+.footer .title-4 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 14px;
+    font-family: poppins; 
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.moveToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.scroll-to-top {
+    /* Your existing styles for the ellipse circle */
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+  
+.scroll-to-top i {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 24px; /* Adjust this value to vertically center the icon */
+}
+  
+.scroll-to-top:hover {
+    background-color: #FF2C5E;
+    opacity: 1; /* Increase opacity on hover */
+}
+  
 
 .modal-overlay {
     position: fixed;

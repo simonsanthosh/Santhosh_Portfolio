@@ -92,7 +92,7 @@ function hideLoader() {
   
     setTimeout(() => {
       loader.style.display = 'none';
-    }, 2000); // Adjust the delay as needed
+    }, 1000); // Adjust the delay as needed
   }
   
   // Call the function to hide the loader when the page is loaded
@@ -104,49 +104,54 @@ function hideLoader() {
     // For example: document.querySelector('.your-content-class').style.display = 'none';
   });
   
-  const bob = document.getElementsByTagName('div')[0];
+ // Your existing code
+const bob = document.getElementsByTagName('div')[0];
+let mouseX = 0;
+let mouseY = 0;
+let ballX = 0;
+let ballY = 0;
+let speed = 0.2;  //how fast ball catches up to mouse pointer;
 
-  let mouseX = 0;
-  let mouseY = 0;
-  
-  let ballX = 0;
-  let ballY = 0;
-  
-  let speed = 0.2;  //how fast ball catches up to mouse pointer;
-  
-  function animate() {
-    let distX = mouseX - ballX;
-    let distY = mouseY - ballY;
-        
-    ballX = ballX + (distX * speed);
-    ballY = ballY + (distY * speed);
-    
-    bob.style.left = ballX + 'px';
-    bob.style.top = ballY + 'px';
-  
-    requestAnimationFrame(animate)
-  
-  };
-  
-  animate();
-   
-  document.addEventListener('mousemove',function(e){
-   mouseX = e.pageX;
-   mouseY = e.pageY;
+function animate() {
+  let distX = mouseX - ballX;
+  let distY = mouseY - ballY;
+  ballX = ballX + (distX * speed);
+  ballY = ballY + (distY * speed);
+  bob.style.left = ballX + 'px';
+  bob.style.top = ballY + 'px';
+  requestAnimationFrame(animate);
+};
+
+animate();
+
+document.addEventListener('mousemove', function(e) {
+  mouseX = e.pageX;
+  mouseY = e.pageY;
+});
+
+document.addEventListener('click', function(e) {
+  e.preventDefault;
+  bob.classList.remove('active');
+  //some rando comment
+  void bob.offsetWidth;
+  bob.classList.add('active');
+}, false);
+
+// Get references to the elements you want to trigger the cursor color change
+const elementsToChangeColor = document.querySelectorAll('.color-change');
+
+// Add event listeners for mouseenter and mouseleave events to the target elements
+elementsToChangeColor.forEach((element) => {
+  element.addEventListener('mouseenter', () => {
+    bob.style.backgroundColor = '#000000'; // Change cursor color to black
   });
-  
-  document.addEventListener('click',function(e){
-   e.preventDefault;
-    bob.classList.remove('active');
-    //some rando comment
-    
-    void bob.offsetWidth;
-    
-    bob.classList.add('active');
-    
-  },false);
-   
-  
+
+  element.addEventListener('mouseleave', () => {
+    bob.style.backgroundColor = '#FF2C5E'; // Change cursor color back to the original color
+  });
+});
+
+
 
   
   
