@@ -85,7 +85,7 @@ contactOpt.addEventListener('click', () => {
 })
 
 // Function to hide the loader and display the content
-function hideLoader() {
+/* function hideLoader() {
     const loader = document.querySelector('.loader-wrapper');
     loader.style.transition = 'opacity 1s ease-in-out';
     loader.style.opacity = '0';
@@ -102,7 +102,7 @@ function hideLoader() {
   document.addEventListener('DOMContentLoaded', () => {
     // Add code to hide your content initially (if needed)
     // For example: document.querySelector('.your-content-class').style.display = 'none';
-  });
+  }); */
   
  // Your existing code
 const bob = document.getElementsByTagName('div')[0];
