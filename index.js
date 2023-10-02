@@ -92,7 +92,7 @@ function hideLoader() {
   
     setTimeout(() => {
       loader.style.display = 'none';
-    }, 1000); // Adjust the delay as needed
+    }, 600); // Adjust the delay as needed
   }
   
   // Call the function to hide the loader when the page is loaded
