@@ -91,6 +91,7 @@ body, h1, p {
     100% { transform: translate(0, 10px) }
 }
 
+/* mouse cursor */
 .cursor {
     position: absolute;
     background: #FF2C5E;
@@ -115,6 +116,36 @@ body, h1, p {
   0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
 }
 
+/* mouse about me cursor */
+/* Cursor Container Styles */
+.mcursor-container {
+    position: fixed;
+    z-index: 9999; /* Ensure a high z-index value to place it on top */
+    pointer-events: none; /* Allows clicks to pass through, so it won't interfere with clicks on other elements */
+}
+
+/* Cursor Styles (inside the cursor container) */
+.mcursor {
+    position: absolute;
+    background: #FF2C5E; /* Initial color */
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    animation: pulse .5s cubic-bezier(.51, 0, 0.4, .5) alternate infinite;
+    transform: translate(-50%, -50%) scale(1);
+    transition: background-color 0.3s ease; /* Add transition for color change */
+}
+
+.mcursor-container:hover .mcursor {
+    background: black; /* Change the cursor color to black when hovering over .mcursor-container */
+}
+
+.mcursor-container:hover a h1 {
+    color: rgb(3, 0, 0); /* Change the "S." text color to red when hovering over .mcursor-container */
+}
+
 .color-change {
     color: #FF2C5E; /* Initial color */
     transition: color 0.3s ease;
@@ -127,7 +158,7 @@ body, h1, p {
 
 .navbar-menu li:hover + .cursor {
     background: white; /* Change to your desired color */
-  }
+}
 
 .navbar {
     padding-inline: 8.75rem;
@@ -191,7 +222,7 @@ a {
 }
 
 .hero {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     margin-inline: 9rem;
     color: #2D2D2D;
     font-family: Poppins;
@@ -201,11 +232,9 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    gap: 1.37rem;
     justify-content: start;
 
 }
@@ -249,6 +278,7 @@ a {
     /* font-family: Libre Baskerville; */
     font-weight: 700;
     color: black;
+    padding: 30px;
 }
 
 .highlight {
@@ -259,6 +289,76 @@ a {
     word-wrap: break-word
 }
 
+.highlight-1 {
+    color: #FF2C5E;
+    font-size: 16px;
+    /* font-family: Poppins; */
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.aboutSec img {
+    margin-top: 30px;
+    width: 430px;
+    height: 450px;
+
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 70px 0;
+}
+  
+.about-text p {
+    margin-bottom: 32px; /* Add spacing between paragraphs */
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style for the iframe displaying the PDF */
+iframe {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
+
+/* Style for the download link */
+a {
+    display: block;
+    text-align: center;
+}
+
+  
 .portfolio-works {
     width: 100%;
     height: auto;
@@ -637,13 +737,13 @@ a {
 }
 
 .aboutSec p {
-    color: #000;
+    color: #2b2b2b;
     text-align: justify;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .aboutSec button {
@@ -670,12 +770,6 @@ a {
 
 .downloadBtn a {
     color: #FF2C5E;
-}
-
-.aboutSec img {
-    width: 385px;
-    height: 406px;
-
 }
 
 .experienceDiv {

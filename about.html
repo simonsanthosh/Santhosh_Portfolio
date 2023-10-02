@@ -5,20 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>About</title>
+  <style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Adjust the floating height here */
+            }
+        }
+
+        .floating-image {
+            animation: float 3s ease-in-out infinite; /* Adjust the animation duration here */
+        }
+    </style>
 </head>
 
 <body>
+   <!-- Add a cursor-container div here -->
+   <div class="mcursor-container">
+    <!-- Your cursor code here -->
+    <div class="mcursor"></div>
+</div>
+ 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="navbar-header">
-        <!-- <button class="navbar-toggler" data-toggle="open-navbar1">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button> -->
-        <a href="#">
-          <h1 style="
+        <div class="navbar-header">
+          <a href="index.html">
+            <h1 style="
                 text-align: center;
                 color: #0e0e0e;
                 font-size: 40px;
@@ -26,101 +43,44 @@
                 font-weight: 700;
                 word-wrap: break-word;
                 margin-top: 1.5rem;
-              ">
-            S.
-          </h1>
+            ">
+                S.
+            </h1>
         </a>
-      </div>
-
-      <div class="navbar-menu" id="open-navbar1">
-        <ul class="navbar-nav">
-          <li class="active">
-            <a href="./index.html#works">
-              <h3 style="
-                    text-align: center;
-                    color: black;
-                    font-size: 18px;
-                    font-family: Poppins;
-                    font-weight: 400;
-                    word-wrap: break-word;
-                  ">
-                Work
-              </h3>
-            </a>
-          </li>
-          <li>
-            <a href="about.html">
-              <h3 style="
-                    text-align: center;
-                    color: black;
-                    font-size: 18px;
-                    font-family: Poppins;
-                    font-weight: 400;
-                    word-wrap: break-word;
-                  ">
-                About
-              </h3>
-            </a>
-          </li>
-          <li>
-            <a href="./assets/Santhosh_Resume.pdf" target="_blank" download>
-              <h3 style="
-                    text-align: center;
-                    color: black;
-                    font-size: 18px;
-                    font-family: Poppins;
-                    font-weight: 400;
-                    word-wrap: break-word;
-                  ">
-                Resume
-              </h3>
-            </a>
-          </li>
-          <li>
-            <a href="#footer-sec">
-              <h3 style="
-                    text-align: center;
-                    color: black;
-                    font-size: 18px;
-                    font-family: Poppins;
-                    font-weight: 400;
-                    word-wrap: break-word;
-                  ">
-                Contact
-              </h3>
-            </a>
-          </li>
-        </ul>
-        <img src="./assets/Menu_icon.png" alt="menu-icon" class="menuIcon" />
-        <img src="./assets/cancel_icon.png" alt="cancel-icon" class="cancelIcon" />
-      </div>
-    </div>
-  </nav>
-  <main class="main">
-    <section>
-      <p class="intro">About Me</p>
-      <div class="aboutSec">
-        <img src="./assets/Santhosh_pic.png" />
-        <div>
-          <p>
-            With an experience of 3 years as UX designer delivering<br />
-            exceptional UI designs that exceeded expectations.
-          </p>
-          <p>
-            Skilled in problem-solving, collaboration, and pushing<br />
-            boundaries for memorable user experiences. Inspiring<br />
-            leader, driving team excellence.
-          </p>
-          <p>
-            Proficient in front-end development, passionate about<br />
-            innovation and staying up-to-date with design trends.<br />
-            Seeking new opportunities to make a meaningful impact<br />
-            in the digital space.
-          </p>
-          <p>Let's connect and create extraordinary experiences.</p>
-          <button> <a href="./assets/Santhosh_Resume.pdf" style="color:#FF2C5E;" target="_blank"
-              download>RESUME</a></button>
         </div>
+        <div class="navbar-menu" id="open-navbar1">
+            <img src="./assets/Menu_icon.png" alt="menu-icon" class="menuIcon" />
+            <img src="./assets/cancel_icon.png" alt="cancel-icon" class="cancelIcon" />
+        </div>
+    </div>
+</nav>
+  <main class="main">
+    
+    <section>
+      <p class="intro color-change"> <span class="name">About Me</span></p>
+      <div class="aboutSec">
+        <img class="floating-image" src="./assets/santhosh_pic.png" alt="Santhosh's Picture"/>
+        <div class="about-text">
+          <p>
+            With <span class="highlight-1">3+ years of hands-on experience</span> as a UX designer, I excel in designing user interfaces that consistently exceed expectations.
+          </p>
+          <p>
+            My skills extend beyond design; I'm a problem-solving enthusiast who thrives on collaboration and pushing the boundaries to create memorable user journeys.
+          </p>
+          <p>
+            Having knowledge in front-end development, and passionate about innovation, I take pride in my ability to inspire and lead teams towards excellence, staying abreast of cutting-edge design trends drives me forward. I'm actively pursuing fresh opportunities to create a substantial impact in the digital realm.
+          </p>
+          <p>
+            Let's connect and collaborate to craft extraordinary user experiences together.
+          </p>       
+          <div id="resumeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="./assets/Santhosh_Resume.pdf"></iframe>
+                <a href="./assets/Santhosh_Resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+        </div>        
       </div>
     </section>
     <section>
@@ -242,17 +202,22 @@
     </section>
     <footer class="footer" id="footer-sec">
       <p class="footer-title">Now, thinking of adding a creative mind to your team?</p>
-      <p class="footer-title-strong"><strong>Let's discuss and make it happen</strong>.</p>
-      <p><a href="mailto:simonsanthosh99@gmail.com" target="_blank" class="title">simonsanthosh99@gmail.com</a></p>
-      <p class="title">(+91) 99412 92729</p>
+      <p class="title-1"><strong>Let's discuss and make it happen.</strong></p>
+      <p><a href="mailto:simonsanthosh99@gmail.com" target="_blank" class="title-2">simonsanthosh99@gmail.com</a></p>
+      <p class="title-3">(+91) 99412 92729</p>
       <div>
-        <a href="https://www.linkedin.com/in/simon-santhosh-b77841158/" target="_blank"><img
-            src="./assets/devicon_linkedin.svg" /></a>
-        <a href="https://www.behance.net/simonsanthosh?tracking_source=search_users|simon%20santhosh "
-          target="_blank"><img src="./assets/devicon_behance.svg" /></a>
+          <a href="https://www.linkedin.com/in/simon-santhosh-b77841158/" target="_blank"><img
+              src="./assets/devicon_linkedin.svg" /></a>
+          <a href="https://www.behance.net/simonsanthosh?tracking_source=search_users|simon%20santhosh "
+              target="_blank"><img src="./assets/devicon_behance.svg" /></a>
       </div>
-      <p>Copyright © 2023. Santhosh Portfolio</p>
-    </footer>
+      <p class="title-4">Copyright © 2023. Santhosh Portfolio</p>
+      <div class="moveToTop">
+          <a href="#top" class="scroll-to-top">
+              <i class="fas fa-arrow-up"></i>
+          </a>
+      </div>
+  </footer>
   </main>
   <nav class="mob-navbar">
     <div class="nav-container">
@@ -317,6 +282,57 @@
     </div>
   </nav>
   <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var scrollToTopButton = document.querySelector(".scroll-to-top");
+
+      // Show/hide the button based on scroll position
+      window.addEventListener("scroll", function() {
+          if (window.pageYOffset > 100) {
+              scrollToTopButton.style.display = "block";
+          } else {
+              scrollToTopButton.style.display = "none";
+          }
+      });
+
+      // Scroll to top when the button is clicked
+      scrollToTopButton.addEventListener("click", function(e) {
+          e.preventDefault();
+          scrollToTop(3500); // Adjust scroll duration as needed (milliseconds)
+      });
+
+      // Function to scroll to top with smooth animation
+      function scrollToTop(duration) {
+          var start = window.pageYOffset;
+          var startTime = performance.now();
+
+          function scrollStep(timestamp) {
+              var currentTime = timestamp || performance.now();
+              var elapsed = currentTime - startTime;
+              var easeInOutQuad = easeInOutQuadFunction(elapsed, start, -start, duration);
+
+              window.scrollTo(0, easeInOutQuad);
+
+              if (elapsed < duration) {
+                  requestAnimationFrame(scrollStep);
+              }
+          }
+
+          function easeInOutQuadFunction(t, b, c, d) {
+              t /= d / 2;
+              if (t < 1) return (c / 2) * t * t + b;
+              t--;
+              return (-c / 2) * (t * (t - 2) - 1) + b;
+          }
+
+          requestAnimationFrame(scrollStep);
+      }
+  });
+</script>
 </body>
 
 </html>
