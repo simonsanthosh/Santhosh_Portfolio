@@ -271,6 +271,56 @@ a {
     background-position: 0% 100%;
 }
 
+.name2 {
+    text-align: center;
+    color: #121212;
+    font-size: 60px;
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    color: black;
+    /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-position: 100%; */
+    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, black 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+    transition: background-position 500ms ease;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    word-wrap: break-word"
+
+}
+
+.name2:hover {
+    background-position: 0% 100%;
+}
+
+.name3 {
+    text-align: center;
+    color: #121212;
+    font-size: 60px;
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    color: black;
+    /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-position: 100%; */
+    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, black 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+    transition: background-position 500ms ease;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    word-wrap: break-word"
+
+}
+
+.name3:hover {
+    background-position: 0% 100%;
+}
+
 .intro {
     text-align: center;
     color: #121212;
@@ -278,7 +328,29 @@ a {
     /* font-family: Libre Baskerville; */
     font-weight: 700;
     color: black;
-    padding: 30px;
+    padding:40px;
+}
+
+.intro1 {
+    text-align: center;
+    color: #121212;
+    font-size: 60px;
+    /* font-family: Libre Baskerville; */
+    font-weight: 700;
+    color: black;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+.intro2 {
+    text-align: center;
+    color: #121212;
+    font-size: 60px;
+    /* font-family: Libre Baskerville; */
+    font-weight: 700;
+    color: black;
+    margin-top: 120px;
+    padding-bottom: 10px;
 }
 
 .highlight {
@@ -775,7 +847,7 @@ a {
 .experienceDiv {
     border-bottom: 2px solid #CFCFCF;
     padding-bottom: 2rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.5rem;
     margin-inline: 12rem;
     font-family: poppins;
 }
@@ -796,7 +868,7 @@ a {
     color: #FF2C5E;
     text-align: center;
     /* font-family: Poppins; */
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -807,7 +879,7 @@ a {
     color: #0B0B0B;
     text-align: center;
     /* font-family: Poppins; */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -818,7 +890,7 @@ a {
     color: #6C6C6C;
     text-align: center;
     /* font-family: Poppins; */
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -834,12 +906,13 @@ a {
     color: #FF2C5E;
     text-align: center;
     /* font-family: Poppins; */
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
     text-align: left;
+    padding-bottom: 30px;
 }
 
 .skills {
