@@ -26,10 +26,10 @@
 
 <body>
    <!-- Add a cursor-container div here -->
-   <div class="mcursor-container">
+<div class="mcursor-container">
     <!-- Your cursor code here -->
     <div class="mcursor"></div>
-</div>
+  </div>
  
   <nav class="navbar">
     <div class="nav-container">
@@ -49,6 +49,52 @@
         </a>
         </div>
         <div class="navbar-menu" id="open-navbar1">
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li class="active">
+                <a href="./index.html">
+                  <h3 class="color-change" style="
+                        text-align: center;
+                        color: black;
+                        font-size: 18px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        word-wrap: break-word;
+                      ">
+                    Home
+                  </h3>
+                </a>
+              </li>
+              <li class="active">
+                <a href="./index.html#works">
+                  <h3 class="color-change" style="
+                        text-align: center;
+                        color: black;
+                        font-size: 18px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        word-wrap: break-word;
+                      ">
+                    Resume
+                  </h3>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#footer-sec">
+                  <h3 class="color-change" style="
+                        text-align: center;
+                        color: black;
+                        font-size: 18px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        word-wrap: break-word;
+                      ">
+                    Contact
+                  </h3>
+                </a>
+              </li>
+            </ul>
+          </div>
             <img src="./assets/Menu_icon.png" alt="menu-icon" class="menuIcon" />
             <img src="./assets/cancel_icon.png" alt="cancel-icon" class="cancelIcon" />
         </div>
@@ -73,13 +119,6 @@
           <p>
             Let's connect and collaborate to craft extraordinary user experiences together.
           </p>       
-          <div id="resumeModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <iframe src="./assets/Santhosh_Resume.pdf"></iframe>
-                <a href="./assets/Santhosh_Resume.pdf" download>Download Resume</a>
-            </div>
-        </div>
         </div>        
       </div>
     </section>
@@ -195,10 +234,10 @@
         </div>
       </div>
       <div class="downloadDiv">
-        <button class="downloadBtn"><a href="./assets/Santhosh_Resume.pdf" target="_blank" download>DOWNLOAD
-            RESUME</a></button>
-      </div>
-
+        <button class="downloadBtn">
+            <a href="./assets/Santhosh_Resume.pdf" target="_blank" download>DOWNLOAD RESUME</a>
+        </button>
+    </div>
     </section>
     <footer class="footer" id="footer-sec">
       <p class="footer-title">Now, thinking of adding a creative mind to your team?</p>
@@ -281,6 +320,7 @@
       </ul>
     </div>
   </nav>
+  
   <script src="./index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -333,6 +373,26 @@
       }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Add smooth scrolling to all links with hashes
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              const targetId = this.getAttribute("href").substring(1); // Get the target element's ID
+              const targetElement = document.getElementById(targetId);
+
+              if (targetElement) {
+                  // Scroll to the target element smoothly
+                  targetElement.scrollIntoView({ behavior: "smooth" });
+              }
+          });
+      });
+  });
+</script>
+
+
 </body>
 
 </html>

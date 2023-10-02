@@ -838,10 +838,23 @@ a {
     color: #FF2C5E;
     background-color: transparent;
     padding: 0.75rem 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .downloadBtn a {
     color: #FF2C5E;
+}
+
+/* Apply the hover effect */
+.downloadDiv .downloadBtn:hover {
+    background-color: #121212; /* Background color on hover */
+    border: none;
+}
+
+/* Apply the hover effect */
+.downloadDiv .downloadBtn:hover a{
+    color: #FFFFFF; /* Background color on hover */
 }
 
 .experienceDiv {

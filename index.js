@@ -151,26 +151,6 @@ elementsToChangeColor.forEach((element) => {
   });
 });
 
-// Get the modal and button elements
-const modal = document.getElementById('resumeModal');
-const btn = document.getElementById('openModalBtn');
-const closeBtn = document.querySelector('.close');
-
-// When the user clicks the button, open the modal
-btn.addEventListener('click', () => {
-    modal.style.display = 'block';
-});
-
-// When the user clicks the close button or outside the modal, close it
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
 
 
 

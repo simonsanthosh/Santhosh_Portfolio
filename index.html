@@ -579,6 +579,24 @@
       }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Add smooth scrolling to all links with hashes
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              const targetId = this.getAttribute("href").substring(1); // Get the target element's ID
+              const targetElement = document.getElementById(targetId);
+
+              if (targetElement) {
+                  // Scroll to the target element smoothly
+                  targetElement.scrollIntoView({ behavior: "smooth" });
+              }
+          });
+      });
+  });
+</script>
 </body>
 
 </html>
