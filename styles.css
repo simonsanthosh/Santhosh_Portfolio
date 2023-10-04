@@ -1092,7 +1092,11 @@ a {
     }
 
     .name {
-        font-size: 34px;
+        font-size: 30px;
+    }
+
+    .rowOne img, .rowTwo img {
+        width: 50%;
     }
 
     .featured-projects {
@@ -1109,8 +1113,6 @@ a {
     .featured-projects p .highlight {
         font-size: 20px;
     }
-
-
 
     .footer .highlight {
         font-size: 14px;
@@ -1239,14 +1241,24 @@ a {
 
     .hero .intro {
         font-size: 30px;
+        padding: 20px;
     }
 
     .hero p {
-        font-size: 18px;
+        font-size: 16px;
+        padding-top: 5px;
     }
 
     .hero p .highlight {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .portfolio-works {
+        margin-top: 50px;
+    }
+
+    .portfolio-works .rowOne, .rowTwo {
+        gap: 10px;
     }
 
     .featured-projects .des .highlight {
