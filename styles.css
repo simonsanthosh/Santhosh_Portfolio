@@ -1092,7 +1092,7 @@ a {
     }
 
     .name {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .featured-projects {
@@ -1242,11 +1242,11 @@ a {
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .hero p .highlight {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .featured-projects .des .highlight {
