@@ -184,6 +184,18 @@ body, h1, p {
 .navbar-nav li a h3:hover {
     color: #FF2C5E !important;
 }
+
+/* Styles for desktop */
+.logo-desktop {
+    text-align: center;
+    color: #0e0e0e;
+    font-size: 28px;
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 1.5rem;
+}
+
 .mob-navbar {
     /* padding-inline: 8.75rem; */
     background-color: transparent;
@@ -1043,7 +1055,7 @@ a {
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 
     .body {
         font-size: 1rem;
@@ -1053,11 +1065,18 @@ a {
         display: none;
     }
 
+    .logo-desktop {
+        font-size: 20px; /* Adjust the font size for mobile */
+        margin-top: 1.5rem; /* Adjust other styles as needed */
+        margin-left: 1rem;
+    }
+
     .navbar-menu .menuIcon {
         display: block;
         width: 2rem;
         height: 2rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
+        margin-right: 0.5rem;
     }
 
     .navbar {
