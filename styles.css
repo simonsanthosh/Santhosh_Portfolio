@@ -1049,6 +1049,10 @@ a {
         font-size: 1rem;
     }
 
+    .cursor {
+        display: none;
+    }
+
     .navbar-menu .menuIcon {
         display: block;
         width: 2rem;
