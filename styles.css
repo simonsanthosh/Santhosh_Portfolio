@@ -1099,19 +1099,31 @@ a {
         width: 50%;
     }
 
-    .featured-projects {
-        margin-inline: 2rem;
+    .featured-projects .title, .footer .title {
+        font-size: 16px;
+    }
 
+    .featured-projects {
+        margin-top: 6rem;
+    }
+
+    .featured-projects .bold-title {
+        font-family: 'libre baskerville';
+    }
+
+    .featured-projects .des {
+        font-size: 16px;
     }
 
     .featured-projects p {
-        font-size: 20px;
+        font-size: 16px;
         font-family: Poppins;
-        Line-height: 24px
+        Line-height: 24px;
+        font-weight: 500;
     }
 
     .featured-projects p .highlight {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .footer .highlight {
@@ -1262,7 +1274,7 @@ a {
     }
 
     .featured-projects .des .highlight {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .intro {
