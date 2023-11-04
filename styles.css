@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: linear-gradient(180deg, #FFFCF4 0%, #FFF 100%);
+    background: #1d1d1d;
     /* background-color: rgb(255, 254, 246);*/
     font-family: 'Libre Baskerville';
     /* font-size: 1.5rem; */
@@ -188,7 +188,7 @@ body, h1, p {
 /* Styles for desktop */
 .logo-desktop {
     text-align: center;
-    color: #0e0e0e;
+    color: #FF2C5E;
     font-size: 28px;
     font-family: Libre Baskerville;
     font-weight: 700;
@@ -211,6 +211,7 @@ body, h1, p {
     text-align: center;
     gap: 0.5rem;
     padding: 0;
+    margin: 60px;
 }
 
 .mobNavbar-nav li {
@@ -236,7 +237,7 @@ a {
 .hero {
     margin-top: 2.5rem;
     margin-inline: 9rem;
-    color: #2D2D2D;
+    color: white;
     font-family: Poppins;
     font-weight: 400;
     text-align: center;
@@ -267,7 +268,7 @@ a {
     color: black;
     /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
     background-position: 100%; */
-    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, black 50%);
+    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, white 50%);
     background-position: 100%;
     background-size: 200% 100%;
     transition: background-position 500ms ease;
@@ -292,7 +293,7 @@ a {
     color: black;
     /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
     background-position: 100%; */
-    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, black 50%);
+    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, white 50%);
     background-position: 100%;
     background-size: 200% 100%;
     transition: background-position 500ms ease;
@@ -301,7 +302,6 @@ a {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     word-wrap: break-word"
-
 }
 
 .name2:hover {
@@ -317,7 +317,7 @@ a {
     color: black;
     /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
     background-position: 100%; */
-    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, black 50%);
+    background: linear-gradient(to right, #FF2C5E, #FF2C5E 50%, white 50%);
     background-position: 100%;
     background-size: 200% 100%;
     transition: background-position 500ms ease;
@@ -339,7 +339,7 @@ a {
     font-size: 60px;
     /* font-family: Libre Baskerville; */
     font-weight: 700;
-    color: black;
+    color: white;
     padding:40px;
 }
 
@@ -465,6 +465,7 @@ a {
 .rowOne img,
 .rowTwo img {
     width: 30%;
+    border-radius: 5px;
 }
 
 .rowOne {
@@ -502,7 +503,7 @@ a {
 }
 
 .featured-projects p {
-    color: #1A1A1A;
+    color: white;
     text-align: center;
     font-size: 18px;
     /*font-family: Poppins;*/
@@ -532,6 +533,10 @@ a {
     margin-bottom: 10px;
 }
 
+.readMoreBtn p {
+    color: #0B0B0B;
+}
+
 .readMoreBtn img {
     cursor: pointer;
 }
@@ -548,36 +553,38 @@ a {
 
 .featured-projects .bold-title {
     text-align: center;
-    color: #121212;
+    color: white;
     font-size: 60px;
     /* font-family: Libre Baskerville; */
     font-weight: 700;
     word-wrap: break-word;
     margin-block: 1.75rem;
     line-height: 60px;
+    margin: 10px;
 }
 
 .featured-projects .cards {
-    margin-top: 5.37rem;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    row-gap: 3.25rem;
+    row-gap: 3rem;
     width: 100%;
     max-width: 100%;
 }
 
 .featured-projects .cards .card {
-    border-radius: 1.25rem;
+    border-radius: 1rem;
 }
 
 .featured-projects .cards .card .bold {
     color: #1A1A1A;
     font-size: 38px;
-    /* font-family: Libre Baskerville; */
+    font-family: Libre Baskerville; 
     font-weight: 700;
-    word-wrap: break-word"
+    word-wrap: break-word;
+    margin-top: 30px
 
 }
 
@@ -585,7 +592,6 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    padding-bottom: 1.5rem;
     justify-content: space-between;
     flex: 1;
     /* gap: 20px */
@@ -816,12 +822,10 @@ a {
     gap: 10rem;
     padding-inline: 6rem;
     padding-bottom: 5rem;
-
-
 }
 
 .aboutSec p {
-    color: #2b2b2b;
+    color: white;
     text-align: justify;
     font-family: Poppins;
     font-size: 16px;
@@ -901,7 +905,7 @@ a {
 }
 
 .positionDiv .date {
-    color: #0B0B0B;
+    color: white;
     text-align: center;
     /* font-family: Poppins; */
     font-size: 1.3rem;
@@ -912,7 +916,7 @@ a {
 }
 
 .companyDiv p {
-    color: #6C6C6C;
+    color: #acacac;
     text-align: center;
     /* font-family: Poppins; */
     font-size: 1.1rem;
@@ -920,6 +924,7 @@ a {
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
+    margin-top: 20px;
 }
 
 .skill-container {
@@ -951,9 +956,9 @@ a {
 
 .skill-box {
     border-radius: 1.875rem;
-    background: #121212;
+    background: white;
     padding: 0.625rem 1.8125rem;
-    color: white;
+    color: #121212;
 }
 
 .modal-content {
@@ -1009,6 +1014,7 @@ a {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    margin-top: 30px;
 }
 
 
@@ -1018,6 +1024,8 @@ a {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+    color: #2B2B2B;
+    font-weight: 600;
 }
 
 .footer .footer-title-strong {
@@ -1075,7 +1083,7 @@ a {
         display: block;
         width: 2rem;
         height: 2rem;
-        margin-top: 1.5rem;
+        margin-top: 1.9rem;
         margin-right: 0.5rem;
     }
 
@@ -1092,7 +1100,15 @@ a {
     }
 
     .name {
-        font-size: 30px;
+        font-size: 36px;
+    }
+
+    .name2 {
+        font-size: 45px;
+    }
+
+    .name3 {
+        font-size: 45px;
     }
 
     .rowOne img, .rowTwo img {
@@ -1113,13 +1129,16 @@ a {
 
     .featured-projects .des {
         font-size: 16px;
+        font-weight: 200;
+        color: white;
     }
 
     .featured-projects p {
         font-size: 16px;
         font-family: Poppins;
         Line-height: 24px;
-        font-weight: 500;
+        font-weight: 600;
+        color: #2B2B2B;
     }
 
     .featured-projects p .highlight {
@@ -1180,7 +1199,7 @@ a {
     }
 
     .footer .footer-title {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 38px;
         margin-top: 20px;
 
@@ -1197,11 +1216,46 @@ a {
         font-size: 16px;
     }
 
+    .footer .title-1 {
+        font-size: 20px;
+    }
+
     .aboutSec {
         flex-direction: column;
         margin-inline: auto;
         padding-inline: 0;
         gap: 5rem;
+    }
+
+    .aboutSec p {
+        color: white;
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: -100px;
+    }
+
+    .about-text p {
+        margin-bottom: 122px;
+
+    }
+
+    .intro .name1 {
+        font-size: 45px;
+    }
+
+    .intro1 {
+        text-align: center;
+        color: #121212;
+        font-size: 60px;
+        /* font-family: Libre Baskerville; */
+        font-weight: 700;
+        color: black;
+        margin-top: -150px;
+        padding-bottom: 60px;
     }
 
     .aboutSec div {
