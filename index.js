@@ -143,7 +143,7 @@ const elementsToChangeColor = document.querySelectorAll('.color-change');
 // Add event listeners for mouseenter and mouseleave events to the target elements
 elementsToChangeColor.forEach((element) => {
   element.addEventListener('mouseenter', () => {
-    bob.style.backgroundColor = '#000000'; // Change cursor color to black
+    bob.style.backgroundColor = '#ffffff'; // Change cursor color to black
   });
 
   element.addEventListener('mouseleave', () => {

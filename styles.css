@@ -139,7 +139,7 @@ body, h1, p {
 }
 
 .mcursor-container:hover .mcursor {
-    background: black; /* Change the cursor color to black when hovering over .mcursor-container */
+    background: rgb(255, 255, 255); /* Change the cursor color to black when hovering over .mcursor-container */
 }
 
 .mcursor-container:hover a h1 {
@@ -188,13 +188,14 @@ body, h1, p {
 /* Styles for desktop */
 .logo-desktop {
     text-align: center;
-    color: #FF2C5E;
+    color: #fefefe;
     font-size: 28px;
     font-family: Libre Baskerville;
     font-weight: 700;
     word-wrap: break-word;
     margin-top: 1.5rem;
 }
+
 
 .mob-navbar {
     /* padding-inline: 8.75rem; */
