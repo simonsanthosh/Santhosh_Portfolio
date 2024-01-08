@@ -873,11 +873,15 @@ a {
 }
 
 .experienceDiv {
-    border-bottom: 2px solid #CFCFCF;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 2rem;
     margin-bottom: 2.5rem;
     margin-inline: 12rem;
     font-family: poppins;
+}
+
+.experiencepoints {
+    color: white;
 }
 
 .positionDiv,
@@ -1300,6 +1304,10 @@ video {
 
     .experienceDiv {
         margin-inline: 1rem;
+    }
+
+    .experiencepoints {
+        color: white;
     }
 
     .skillName {
