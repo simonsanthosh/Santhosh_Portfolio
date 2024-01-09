@@ -151,10 +151,62 @@ elementsToChangeColor.forEach((element) => {
   });
 });
 
+//modals for view prototype
+  var modal = document.getElementById('myModal');
+  var btn1 = document.getElementById('protobut');
+  var btn2 = document.getElementById('protobut1');
+  var btn3 = document.getElementById('protobut2');
+  var btn4 = document.getElementById('protobut3');
+  var closeModalBtn = document.getElementById('closeModal');
+  var modalIframe = document.getElementById('modalIframe');
 
+  btn1.addEventListener('click', function () {
+      // Set the URL you want to open in the modal
+      var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FII0UHlhWmOlKd9HLNarfNq%2FVANDALUR_ZOO_APP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D56-377%26viewport%3D192%252C302%252C0.14%26t%3DaCkGWEGVUsgZkHAA-1%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A2%26mode%3Ddesign';
+      modalIframe.src = url;
 
+      // Display the modal
+      modal.style.display = 'block';
+  });
 
-  
-  
-  
+  btn2.addEventListener('click', function () {
+    // Set the URL you want to open in the modal
+    var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvotIpCQuNhjRLMPg9cjnhf%2FPricing_Plans%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1249-63%26viewport%3D-5761%252C1743%252C0.14%26t%3DbGMSt6BISIsQDAxE-1%26scaling%3Dscale-down%26starting-point-node-id%3D1249%253A63%26mode%3Ddesign';
+    modalIframe.src = url;
 
+    // Display the modal
+    modal.style.display = 'block';
+});
+
+btn3.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnOZLNI6tMeuDsjtyHQkCxJ%2FDRMURS%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D30-23%26viewport%3D357%252C386%252C0.06%26t%3DUEJgKNOUySURCwmK-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+btn4.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FII0UHlhWmOlKd9HLNarfNq%2FVANDALUR_ZOO_APP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D56-377%26viewport%3D192%252C302%252C0.14%26t%3DaCkGWEGVUsgZkHAA-1%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A2%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+  closeModalBtn.addEventListener('click', function () {
+      // Close the modal when the close button is clicked
+      modal.style.display = 'none';
+      // Reset the iframe src to stop the video/audio (if applicable)
+      modalIframe.src = '';
+  });
+
+  // Close the modal if the overlay is clicked
+  window.addEventListener('click', function (event) {
+      if (event.target === modal) {
+          modal.style.display = 'none';
+          modalIframe.src = '';
+      }
+  });

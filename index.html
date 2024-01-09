@@ -104,8 +104,7 @@
   <main class="main">
     <section class="hero" data-aos="fade-up" data-aos-duration="3000">
       <p class="intro color-change"> <span class="name">Hi, I’m Santhosh</span></p>
-      <p>An <span class="highlight color-change">Innovative UX Designer</span><span> dedicated to crafting user-centric,<br>
-          delightful experiences and mentoring aspiring UX/UI professionals</span></p>
+      <p>Results-driven UX Designer with a passion for <span class="highlight color-change">crafting user-centric experiences.</span><span> <br>Experienced in mentoring <span class="highlight color-change">aspiring UX/UI professionals.</span></span> Eager to bring <span class="highlight color-change">innovative solutions to your team.</span><br></span></p>
     </section>
     <section class="portfolio-works" data-aos="fade-up" data-aos-duration="3000">
       <div class="rowOne">
@@ -146,7 +145,7 @@
             <p class="description">Intellemo: Simplify your digital marketing campaigns with seamless publishing across
               Facebook, Instagram, Meta, and Google Ads.</p>
             <div class="readMoreBtn">
-              <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyOne" /></span>
+              <button class="button1 caseStudyOne">Read Case Study</button><button id = "protobut" class="button2">View Prototype</button>
             </div>
           </div>
           <div class="imgDiv">
@@ -160,7 +159,7 @@
             <p class="description">Experience google search with Intellemo's integrated products, and maximising ROI
               through subscription plans.</p>
             <div class="readMoreBtn">
-              <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyTwo" /></span>
+              <button class="button1 caseStudyTwo">Read Case Study</button><button id = "protobut1" class="button2">View Prototype</button>
             </div>
           </div>
           <div class="imgDiv">
@@ -174,7 +173,7 @@
             <p class="description">Unlocking Potential: Transforming goals into achievements. A small case study with an
               idea of future growth of students.</p>
             <div class="readMoreBtn">
-              <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyThree" /></span>
+              <button class="button1 caseStudyThree">Read Case Study</button><button id = "protobut2" class="button2">View Prototype</button>
             </div>
           </div>
           <div class="imgDiv">
@@ -188,7 +187,7 @@
             <p class="description">Won 1st place in TN Govt. Project: Enhancing visitor experience with advanced ticket
               validation and seamless design.</p>
             <div class="readMoreBtn">
-              <p>Read Case Study</p><span><img src="./assets/teenyicons.svg" class="caseStudyFour" /></span>
+              <button class="button1 caseStudyFour">Read Case Study</button><button id = "protobut3" class="button2">View Prototype</button>
             </div>
           </div>
           <div class="imgDiv">
@@ -211,7 +210,7 @@
             <p><span class="bold">JioMart Ad Creatives</span></p>
             <p class="description">Crafted engaging ad campaigns for JioMart's diverse product range, captivating audiences with effective visuals.</p>
             <div class="readMoreBtn">
-              <p>View Creative</p><span><a href="./jiomart.html"><img src="./assets/teenyicons.svg"/></a></span>
+              <button class="button3" onclick="window.location.href='./jiomart.html'">View Creative</button>
             </div>
           </div>
           <!-- <div class="imgDiv">
@@ -225,7 +224,7 @@
             <p class="description">Driving impact with Urban Company creatives: Expanding reach and engagement via strategic Meta ad campaigns.
             </p>
             <div class="readMoreBtn">
-              <p>View Creative</p><span><a href="./uc.html"><img src="./assets/teenyicons.svg" /></a></span>
+              <button class="button3" onclick="window.location.href='./uc.html'">View Creative</button>
             </div>
           </div>
           <!-- <div class="imgDiv">
@@ -239,7 +238,7 @@
             <p class="description">Designed captivating creatives that resulted in impressive conversions, incremental
               growth in orders, and expanded market reach for HOC.</p>
             <div class="readMoreBtn">
-              <p>View Creative</p><span><a href="./hoc.html"><img src="./assets/teenyicons.svg" /></a></span>
+              <button class="button3" onclick="window.location.href='./hoc.html'">View Creative</button>
             </div>
           </div>
           <!-- <div class="imgDiv">
@@ -252,7 +251,7 @@
             <p><span class="bold">Other Biz Clients</span></p>
             <p class="description">Delivering effectiveness in social media ad campaigns to enhance reach and impact for diverse business clients.</p>
             <div class="readMoreBtn">
-              <p>View Creative</p><span><a href="./obc.html"><img src="./assets/teenyicons.svg" /></a></span>
+              <button class="button3" onclick="window.location.href='./obc.html'">View Creative</button>
             </div>
           </div>
           <!-- <div class="imgDiv">
@@ -394,7 +393,7 @@
             <source src="./assets/Text_Intro_2.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-container" data-aos="fade-up" data-aos-duration="5000">
+        <div class="video-container1" data-aos="fade-up" data-aos-duration="5000">
           <video autoplay loop muted>
             <source src="./assets/Apple_Watch.mp4" type="video/mp4">
           </video>
@@ -402,6 +401,11 @@
         <div class="video-container" data-aos="fade-up" data-aos-duration="6000">
           <video autoplay loop muted>
             <source src="./assets/Sneakers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-container1" data-aos="fade-up" data-aos-duration="6000">
+          <video autoplay loop muted>
+            <source src="./assets/Generate_Video.mp4" type="video/mp4">
           </video>
         </div>
         </div>
@@ -428,6 +432,7 @@
   </footer>
     <div id="modal-overlay" class="modal-overlay">
       <div id="modal-content" class="modal-content">
+        <div id="closeModal">&times;</div>
         <!-- <iframe id="modal-iframe" width="100%" height="100%"></iframe> -->
         <embed id="modal-embed" frameborder="0" style="width:100%;max-width:100%;"></embed>
         <!-- <object id="modal-iframe" type="application/pdf"></object> -->
@@ -496,6 +501,15 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Modal container for prototype -->
+<div id="myModal" class="modals">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
   <script>
     function openPDFModal(pdfUrl) {
       // var pdfUrl = "./assets/laptopImg.png";
