@@ -386,17 +386,21 @@
     <section class="featured-projects" data-aos="fade-up" data-aos-duration="3000">
       <p class="title color-change">BEYOND FRAMES</p>
       <p class="bold-title">Product Showcase</p>
-      <p class="des">Animating products for practice and showcasing our company's <br>product demos to<span class="highlight color-change"> captivate investors.</span></p>
+      <p class="des">Unlocking <span class="highlight color-change">investor insights</span> with demos seamlessly <br>integrating AI Chat -<span class="highlight color-change"> revealing our product's potential.</span></p>
       <div class="cards">
         <div class="video-container" data-aos="fade-up" data-aos-duration="4000">
           <video autoplay loop muted>
-            <source src="./assets/Text_Intro_2.mp4" type="video/mp4">
+            <source src="./assets/Intella_AI_Video.mp4" type="video/mp4">
           </video>
+          <h1>INTELLA - AI DEMO VIDEO</h1>
+          <p>My editing skills enhance investor comprehension. AI demo with ChatGPT: streamlined ad launches, improved flexibility (30%), business growth (25%), and time optimization (20%). Future advertising efficiency.</p>
         </div>
         <div class="video-container1" data-aos="fade-up" data-aos-duration="5000">
           <video autoplay loop muted>
-            <source src="./assets/Apple_Watch.mp4" type="video/mp4">
+            <source src="./assets/Generate_Video.mp4" type="video/mp4">
           </video>
+          <h1>GENERATING AD IMAGES TO VIDEO</h1>
+          <p>My editing skills enhance investor comprehension. AI demo with ChatGPT: streamlined ad launches, improved flexibility (30%), business growth (25%), and time optimization (20%). Future advertising efficiency.</p>
         </div>
         <div class="video-container" data-aos="fade-up" data-aos-duration="6000">
           <video autoplay loop muted>
@@ -431,10 +435,13 @@
       </div>
   </footer>
     <div id="modal-overlay" class="modal-overlay">
-      <div id="modal-content" class="modal-content">
-        <div id="closeModal">&times;</div>
+      <div id="modal-content" class="modal-content" style="height: 100%;">
+        <span id="closeModalcs" style="position: absolute;
+        right: 10px;
+        top: -5px;
+        font-size: 40px; cursor: pointer;">&times;</span>
         <!-- <iframe id="modal-iframe" width="100%" height="100%"></iframe> -->
-        <embed id="modal-embed" frameborder="0" style="width:100%;max-width:100%;"></embed>
+        <embed id="modal-embed" frameborder="0" style="width:100%;max-width:100%;height: 100%;"></embed>
         <!-- <object id="modal-iframe" type="application/pdf"></object> -->
       </div>
     </div>
@@ -525,6 +532,7 @@
       var modalContent = document.getElementById("modal-content");
       var modalIframe = document.getElementById("modal-embed");
 
+
       modalIframe.src = pdfUrl;
       modalOverlay.style.display = "flex";
 
@@ -540,8 +548,8 @@
 
     document.getElementsByClassName('caseStudyOne')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229825/Presentations/4_o7vlnj.png'));
     document.getElementsByClassName('caseStudyTwo')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229825/Presentations/4_o7vlnj.png'));
-    document.getElementsByClassName('caseStudyThree')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229825/Presentations/4_o7vlnj.png'));
-    document.getElementsByClassName('caseStudyFour')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229825/Presentations/4_o7vlnj.png'));
+    document.getElementsByClassName('caseStudyThree')[0].addEventListener('click', () => openPDFModal('./assets/DRMURS_PRESENTATION_compressed.pdf'));
+    document.getElementsByClassName('caseStudyFour')[0].addEventListener('click', () => openPDFModal('./assets/VANDALUR_ZOO_PRESENTATION.pdf'));
     document.getElementsByClassName('caseStudyFive')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691233751/slice_rtqq3z.png'));
     document.getElementsByClassName('caseStudySix')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229820/Presentations/6_ww1pfp.png'));
     document.getElementsByClassName('caseStudySeven')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691232173/7_kdnfte.png'));
@@ -550,6 +558,17 @@
     document.getElementsByClassName('caseStudyTen')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691231364/10_2_b6kyuz.png'));
     document.getElementsByClassName('caseStudyElven')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229835/Presentations/11_hkbapx.png'));
     document.getElementsByClassName('caseStudyTwelve')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229827/Presentations/12_e66ypj.png'));
+    document.getElementById('closeModalcs').addEventListener('click',()=>{
+      var modalOverlay = document.getElementById("modal-overlay");
+      var modalContent = document.getElementById("modal-content");
+      var modalIframe = document.getElementById("modal-embed");
+
+      console.log('line567');
+
+      modalOverlay.style.display = "none";
+        modalIframe.src = "";
+      
+    })
   </script>
   
   <script src="./index.js"></script>
