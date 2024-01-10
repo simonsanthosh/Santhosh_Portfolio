@@ -356,6 +356,15 @@ a {
     align-items: center;
 }
 
+/* uc logo */
+.uc-logo {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+    align-items: center;
+}
+
 /* buttons for jio mart back and next */
 
 /* Style for both buttons */
@@ -582,7 +591,7 @@ a {
     color: white;
     text-align: center;
     font-size: 18px;
-    /*font-family: Poppins;*/
+    font-family: 'Poppins';
     font-weight: 600;
     line-height: 1.875rem;
     letter-spacing: 0.05625rem;
@@ -696,12 +705,16 @@ a {
     text-align: center;
     color: white;
     font-size: 60px;
-    /* font-family: Libre Baskerville; */
+    font-family: Libre Baskerville; 
     font-weight: 700;
     word-wrap: break-word;
     margin-block: 1.75rem;
     line-height: 80px;
     margin: 10px;
+}
+
+.descDiv .extra p {
+    font-family: 'poppins';
 }
 
 .featured-projects .cards {
@@ -1122,6 +1135,7 @@ a {
 
 .imgContainer .descDiv {
     margin-bottom: 5rem;
+    font-family: 'poppins';
 }
 
 .imgFlex {
