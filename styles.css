@@ -375,6 +375,15 @@ a {
     border-radius: 5px;
 }
 
+/* obc logo */
+.obc-logo {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+    align-items: center;
+}
+
 /* buttons for jio mart back and next */
 .buttonn {
     display: block;
