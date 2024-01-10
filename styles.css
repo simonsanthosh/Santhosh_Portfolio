@@ -365,9 +365,17 @@ a {
     align-items: center;
 }
 
-/* buttons for jio mart back and next */
+/* hoc logo */
+.hoc-logo {
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+    align-items: center;
+    border-radius: 5px;
+}
 
-/* Style for both buttons */
+/* buttons for jio mart back and next */
 .buttonn {
     display: block;
     padding: 10px 40px;
@@ -596,6 +604,7 @@ a {
     line-height: 1.875rem;
     letter-spacing: 0.05625rem;
     margin-block: 0;
+    margin-top: 3%;
 }
 
 .featured-projects .description {
@@ -1154,6 +1163,12 @@ a {
 .imgFlex .bigImg {
     width: 100%;
     height: auto;
+}
+
+.imgFlex .bigImg1 {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #FF2C5E;
 }
 
 .navbar-menu img {
