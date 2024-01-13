@@ -157,6 +157,10 @@ elementsToChangeColor.forEach((element) => {
   var btn2 = document.getElementById('protobut1');
   var btn3 = document.getElementById('protobut2');
   var btn4 = document.getElementById('protobut3');
+  var btn5 = document.getElementById('protobut4');
+  var btn6 = document.getElementById('protobut5');
+  var btn7 = document.getElementById('protobut6');
+  var btn8 = document.getElementById('protobut7');
   var closeModalBtn = document.getElementById('closeModal');
   var modalIframe = document.getElementById('modalIframe');
 
@@ -190,6 +194,42 @@ btn3.addEventListener('click', function () {
 btn4.addEventListener('click', function () {
   // Set the URL you want to open in the modal
   var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FII0UHlhWmOlKd9HLNarfNq%2FVANDALUR_ZOO_APP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D56-377%26viewport%3D192%252C302%252C0.14%26t%3DaCkGWEGVUsgZkHAA-1%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A2%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+btn5.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FweywwG0OojQxVOTgTRzIQ0%2FVOYAGER%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D59-285%26viewport%3D83%252C364%252C0.06%26t%3DOdR1J5gCwbjskNME-1%26scaling%3Dscale-down%26starting-point-node-id%3D4%253A131%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+btn6.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlXzxWsM1d6zz8tyL6a7zP4%2FREDFOOT%3Fpage-id%3D320%253A7217%26type%3Ddesign%26node-id%3D337-9330%26viewport%3D219%252C285%252C0.1%26t%3D0V1j5qBWUWzrgiDv-1%26scaling%3Dscale-down%26starting-point-node-id%3D595%253A2167%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+btn7.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwZVGgv92n4plndBGck2eTi%2FTHEME%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D27-134%26viewport%3D181%252C202%252C0.1%26t%3D1RLaDWwhFHGhpCxZ-1%26scaling%3Dscale-down%26starting-point-node-id%3D27%253A134%26show-proto-sidebar%3D1%26mode%3Ddesign';
+  modalIframe.src = url;
+
+  // Display the modal
+  modal.style.display = 'block';
+});
+
+btn8.addEventListener('click', function () {
+  // Set the URL you want to open in the modal
+  var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLBt29DDPLXEspv1v532ceC%2FHOUSE_OF_COMICS%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D47-383%26viewport%3D277%252C64%252C0.06%26t%3DSGGzUQZHO04bRpOn-1%26scaling%3Dcontain%26starting-point-node-id%3D3%253A2%26mode%3Ddesign';
   modalIframe.src = url;
 
   // Display the modal
