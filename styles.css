@@ -102,7 +102,6 @@ body, h1, p {
     left: 50%;
     animation: pulse .5s cubic-bezier(.51, 0, 0.4, .5) alternate infinite;
     transform: translate(-50%, -50%) scale(1);
-    pointer-events: auto;
   }
    
 @keyframes pulse {
@@ -148,7 +147,7 @@ body, h1, p {
 }
 
 .color-change {
-    color: #FF2C5E; /* Initial color */
+    color: #ffffff; /* Initial color */
     transition: color 0.3s ease;
 }
 
@@ -222,7 +221,6 @@ body, h1, p {
 
 li {
     list-style-type: none;
-    
 }
 
 a {
