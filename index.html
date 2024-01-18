@@ -151,7 +151,6 @@
           <div class="imgDiv">
             <img src="./assets/CS_Images/cs1.webp" />
           </div>
-
         </div>
         <div class="card cardTwo" data-aos="fade-up" data-aos-duration="1500">
           <div class="textdiv">
@@ -323,6 +322,54 @@
         </div>
       </div>
     </section>
+
+    <section class="featured-projects" id="creatives">
+      <p class="title color-change" data-aos="fade-up" data-aos-duration="1000">ELEVATE YOUR BRAND</p>
+      <p class="bold-title" data-aos="fade-up" data-aos-duration="1200">Landing Page Launchpad</p>
+      <p class="des" data-aos="fade-up" data-aos-duration="1400">Crafted<span class="highlight color-change"> dynamic landing page templates</span> on my platform, blending<br /> <span class="highlight color-change">strategic planning and color theory UI </span>for client success.</p>
+      <div class="cards">
+        <div class="card cardOnee" data-aos="fade-up" data-aos-duration="1100">
+          <div class="textdiv">
+            <p class="bold"><span>Referral </span><br />Program Page</span></p>
+            <p class="description">Elevating engagement, igniting growth. Dynamic UI for desktop and mobile to drive client participation and business expansion.</p>
+            <div class="readMoreBtn">
+              <button class="button1 caseStudyNine">Explore UI Page</button><button onclick="window.open('https://intellemo.ai/referral-program', '_blank');" class="button2">View Live Site</button>
+            </div>
+          </div>
+        </div>
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="1100">
+          <div class="textdiv">
+            <p class="bold"><span>Revolutionising </span><br />Digital Ads</span></p>
+            <p class="description">Elevating Engagement, Igniting Growth. Dynamic UI for Desktop and Mobile to Drive Client Participation and Business Expansion</p>
+            <div class="readMoreBtn">
+              <button class="button1 caseStudyTen">Read Case Study</button><button id = "protobut" class="button2">View Prototype</button>
+            </div>
+          </div>
+        </div>
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="1100">
+          <div class="textdiv">
+            <p class="bold"><span>Revolutionising </span><br />Digital Ads</span></p>
+            <p class="description">Intellemo: Simplify your digital marketing campaigns with seamless publishing across
+              Facebook, Instagram, Meta, and Google Ads.</p>
+            <div class="readMoreBtn">
+              <button class="button1 caseStudyOne">Read Case Study</button><button id = "protobut" class="button2">View Prototype</button>
+            </div>
+          </div>
+        </div>
+        <div class="card cardOne" data-aos="fade-up" data-aos-duration="1100">
+          <div class="textdiv">
+            <p class="bold"><span>Revolutionising </span><br />Digital Ads</span></p>
+            <p class="description">Intellemo: Simplify your digital marketing campaigns with seamless publishing across
+              Facebook, Instagram, Meta, and Google Ads.</p>
+            <div class="readMoreBtn">
+              <button class="button1 caseStudyOne">Read Case Study</button><button id = "protobut" class="button2">View Prototype</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="btn">Open PDF</button> -->
+    </section>
+
     
     <section class="featured-projects">
       <p class="title color-change" data-aos="fade-up" data-aos-duration="1000">BEYOND FRAMES</p>
@@ -375,17 +422,12 @@
           </a>
       </div>
   </footer>
-    <div id="modal-overlay" class="modal-overlay">
-      <div id="modal-content" class="modal-content" style="height: 100%;">
-        <span id="closeModalcs" style="position: absolute;
-        right: 10px;
-        top: -5px;
-        font-size: 40px; cursor: pointer;">&times;</span>
-        <!-- <iframe id="modal-iframe" width="100%" height="100%"></iframe> -->
-        <embed id="modal-embed" frameborder="0" style="width:100%;max-width:100%;height: 100%;"></embed>
-        <!-- <object id="modal-iframe" type="application/pdf"></object> -->
-      </div>
+  <div id="modal-overlay" class="modal-overlay">
+    <div id="modal-content" class="modal-content" style="height: 100%;">
+      <span id="closeModal" style="position: absolute; top: 5px; right: 10px; font-size: 30px; cursor: pointer;">&times;</span>
+      <embed id="modal-embed" frameborder="0" style="width:100%; max-width:100%; height: 100%;"></embed>
     </div>
+  </div>
   </main>
   <nav class="mob-navbar">
     <div class="nav-container">
@@ -501,21 +543,40 @@
     document.getElementsByClassName('caseStudySix')[0].addEventListener('click', () => openPDFModal('./assets/Redfoot_Presentation_Final_compressed.pdf'));
     document.getElementsByClassName('caseStudySeven')[0].addEventListener('click', () => openPDFModal('./assets/THEME_PRESENTATION.pdf'));
     document.getElementsByClassName('caseStudyEight')[0].addEventListener('click', () => openPDFModal('./assets/HOC_PRESENTATION_compressed.pdf'));
-    document.getElementsByClassName('caseStudyNine')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691230399/9_m0gbwo.png'));
+    document.getElementsByClassName('caseStudyNine')[0].addEventListener('click', () => openPDFModal('./assets/Refferal_Presentation.pdf'));
     document.getElementsByClassName('caseStudyTen')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691231364/10_2_b6kyuz.png'));
     document.getElementsByClassName('caseStudyElven')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229835/Presentations/11_hkbapx.png'));
     document.getElementsByClassName('caseStudyTwelve')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229827/Presentations/12_e66ypj.png'));
-    document.getElementById('closeModalcs').addEventListener('click',()=>{
-      var modalOverlay = document.getElementById("modal-overlay");
-      var modalContent = document.getElementById("modal-content");
-      var modalIframe = document.getElementById("modal-embed");
+</script>
+<script>
+document.getElementById('closeModal').addEventListener('click', () => {
+  var modalOverlay = document.getElementById("modal-overlay");
+  var modalContent = document.getElementById("modal-content");
 
-      console.log('line567');
+  if (modalOverlay && modalContent) {
+    modalOverlay.style.display = "none";
 
-      modalOverlay.style.display = "none";
-        modalIframe.src = "";
-      
-    })
+    // Remove the modal-embed element
+    var modalIframe = document.getElementById("modal-embed");
+    if (modalIframe) {
+      modalIframe.remove();
+    }
+
+    // Recreate the modal-embed element
+    var newModalIframe = document.createElement("embed");
+    newModalIframe.id = "modal-embed";
+    newModalIframe.frameborder = "0";
+    newModalIframe.style.width = "100%";
+    newModalIframe.style.maxWidth = "100%";
+    newModalIframe.style.height = "100%";
+
+    // Append the new modal-embed element to modal-content
+    modalContent.appendChild(newModalIframe);
+  }
+});
+</script>
+
+
   </script>
   
   <script src="./index.js"></script>
