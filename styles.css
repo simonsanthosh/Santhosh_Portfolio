@@ -817,7 +817,7 @@ a {
 
 .cardOne_1 {
     background-color: #FFF1F1;
-    ;
+    
 }
 
 .cardTwo_2 {
@@ -871,6 +871,10 @@ a {
 
 .cardSix {
     background-color: #E5ECFF;
+}
+
+.cardOnee {
+    background: linear-gradient(to bottom, #c6bcff, #f6fffe);
 }
 
 .footer {
