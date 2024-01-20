@@ -738,7 +738,7 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 30px; /* Adjust as needed */
+    margin-top: 50px; /* Adjust as needed */
 }
 
 .featured-projects .cardss .card {
@@ -845,69 +845,58 @@ a {
 }
 
 .cardOne_1 {
-    background-color: #FFF1F1;
-    
+    background: linear-gradient(to bottom, #FFF1F1, #fd9d9d);
 }
 
 .cardTwo_2 {
-    background-color: #EFE8FF;
+    background: linear-gradient(to bottom, #f4f0ff, #c4baff);
 }
 
 .cardThree_3 {
-    background-color: #FFFCE4;
+    background: linear-gradient(to bottom, #FFFCE4, #e9f9aa);
 }
 
 .cardFour_4 {
-    background-color: #EFF3FF;
+    background: linear-gradient(to bottom, #EFF3FF, #a5d2fe);
 }
 
 .cardone {
-    background-color: #ffd7ba;
+    background: linear-gradient(to bottom, #ffd7ba, #fe8747);
 }
 
 .cardtwo {
-    background-color: #ffbaba;
+    background: linear-gradient(to bottom, #ffbaba, #fe4747);
 }
 
 .cardthree {
-    background-color: #d2dafa;
+    background: linear-gradient(to bottom, #d2dafa, #6c5eff);
 }
 
 .cardfour {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #fed4d4, #002b62);
 }
 
 .cardOne {
-    background-color: #e6ffff;
+    background: linear-gradient(to bottom, #9cf8ff, #bdffe0);
 }
 
 .cardTwo {
-    background-color: #FFE7EE;
+    background: linear-gradient(to bottom, #ffc3d4, #fbffbd);
 }
 
 .cardThree {
-    background-color: #ddd3e8;
+    background: linear-gradient(to bottom, #dab8ff, #ffc6c3);
 }
 
 .cardFour {
-    background-color: #EEFEE4;
+    background: linear-gradient(to bottom, #e7ffd8, #006312);
 }
-
-.cardFive {
-    background-color: #FFE3E3;
-    ;
-}
-
-.cardSix {
-    background-color: #E5ECFF;
-}
-
 .cardOnee {
-    background: linear-gradient(to bottom, #c6bcff, #f6fffe);
+    background: linear-gradient(to bottom, #c6bcff, #fcffc8);
 }
 
 .cardTwoo {
-    background: linear-gradient(to bottom, #c6bcff, #f6fffe);
+    background: linear-gradient(to bottom, #ffbccd, #e1c0f7);
 }
 
 .footer {
