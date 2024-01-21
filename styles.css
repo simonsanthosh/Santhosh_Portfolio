@@ -1281,12 +1281,14 @@ a {
 }
 
 .video-container1 {
-    width: 105%; /* Set the width to 100% to match parent container */
+    width: 97%; /* Set the width to 100% to match parent container */
     max-width: none; /* Remove the maximum width constraint */
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1; /* Ensure it takes up available space vertically */
+    height: 82%;
+    margin-top: 75px;
 }
 
 .video-container1 h1 {
