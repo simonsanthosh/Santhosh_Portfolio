@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Include the Plyr library -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 </head>
 
 <body>
@@ -342,7 +344,7 @@
             <p class="bold"><span>Tailored UI </span><br />for Clients</span></p>
             <p class="description">Crafted bespoke UI landing page templates, seamlessly tailored to elevate businesses and drive exponential growth.</p>
             <div class="readMoreBtn">
-              <button class="button1 caseStudyTen">Explore UI Design</button><button id = "protobut" class="button2">View Video UI</button>
+              <button class="button1 caseStudyTen">Explore UI Design</button>
             </div>
           </div>
          </div>
@@ -357,14 +359,14 @@
       <p class="des" data-aos="fade-up" data-aos-duration="1400">Unlocking <span class="highlight color-change">investor insights</span> with demos seamlessly <br>integrating AI Chat -<span class="highlight color-change"> revealing our product's potential.</span></p>
       <div class="cards">
         <div class="video-container" data-aos="fade-up" data-aos-duration="1100">
-          <video autoplay loop muted>
+          <video id="myVideo" autoplay loop>
             <source src="./assets/Intella_AI_Video.mp4" type="video/mp4">
           </video>
           <h1 data-aos="fade-up" data-aos-duration="1000">INTELLA - AI DEMO VIDEO</h1>
           <p data-aos="fade-up" data-aos-duration="1200">My editing skills enhance investor comprehension. AI demo with ChatGPT: streamlined ad launches, improved flexibility (30%), business growth (25%), and time optimization (20%). Future advertising efficiency.</p>
         </div>
         <div class="video-container1" data-aos="fade-up" data-aos-duration="1500">
-          <video autoplay loop muted>
+          <video id="myVideo1" autoplay loop>
             <source src="./assets/Generate_Video.mp4" type="video/mp4">
           </video>
           <h1 data-aos="fade-up" data-aos-duration="1000">GENERATING AD IMAGES TO VIDEO</h1>
@@ -559,6 +561,26 @@ document.getElementById('closeModal').addEventListener('click', () => {
 
   </script>
   
+<!-- Include Plyr script -->
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+<!-- Initialize Plyr -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const player = new Plyr('#myVideo', {
+      controls: ['play', 'progress', 'mute', 'volume', 'fullscreen'],
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const player = new Plyr('#myVideo1', {
+      controls: ['play', 'progress', 'mute', 'volume', 'fullscreen'],
+    });
+  });
+</script>
+
   <script src="./index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
