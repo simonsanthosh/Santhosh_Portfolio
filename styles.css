@@ -499,6 +499,8 @@ a {
     margin-bottom: 32px; /* Add spacing between paragraphs */
 }
 
+
+
 /* Styles for the modal */
 .modal {
     display: none;
@@ -615,6 +617,19 @@ a {
     margin-top: 0%;
 }
 
+.video-projects p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.875rem;
+    letter-spacing: 0.05625rem;
+    margin-block: 0;
+    margin-top: 0%;
+}
+
+
 .featured-projects .description {
     text-align: left;
     margin-block: 1.63rem;
@@ -718,7 +733,28 @@ a {
     line-height: 54px;
 }
 
+.video-projects .title {
+    text-align: center;
+    color: #FF2C5E;
+    font-size: 20px;
+    font-family: Poppins; 
+    font-weight: 500;
+    line-height: 54px;
+}
+
 .featured-projects .bold-title {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: Libre Baskerville; 
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-block: 1.75rem;
+    line-height: 80px;
+    margin: 10px;
+}
+
+.video-projects .bold-title {
     text-align: center;
     color: white;
     font-size: 60px;
@@ -765,20 +801,27 @@ a {
     max-width: 100%;
 }
 
-.featured-projects .video-rows {
+.video-projects .video-row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between videos in a row as needed */
+    margin-top: 90px;
+    justify-content: center;
+}
+
+.video-projects .video-row video {
+    max-width: calc(50% - 20px); /* Each video takes half of the container width with padding */
+    padding: 0 10px; /* Adjust the padding value as needed */
+    box-sizing: border-box; /* Include padding in the total width */
+    border-radius: 35px;
+}
+
+/* Optional: Center the videos vertically within each row */
+.video-projects .video-rows {
     display: flex;
     flex-direction: column;
-    gap: 64px; /* Adjust the gap between rows as needed */
+    align-items: center;
 }
 
-.featured-projects .video-row {
-    display: flex;
-    gap: 64px; /* Adjust the gap between videos in a row as needed */
-}
-
-.featured-projects .video-row video {
-    width: 50%; /* Each video takes half of the container width */
-}
 
 
 .featured-projects .cards .card {
