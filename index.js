@@ -250,3 +250,6 @@ btn8.addEventListener('click', function () {
           modalIframe.src = '';
       }
   });
+
+  // Show message to open pdf on desktop
+  
