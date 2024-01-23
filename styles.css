@@ -1701,6 +1701,16 @@ a {
       text-align: center;
       }
 
+      .featured-projects .cardss .card .bold span {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .featured-projects .cardss .card .bold {
+        font-size: 34px;
+        text-align: center;
+      }
+
     .footer {
         padding: 1rem;
     }
