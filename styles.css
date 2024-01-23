@@ -1446,6 +1446,7 @@ a {
     color: #ffffff;
 }
 
+/* --------------------------------------------------------------*/
 
 @media screen and (max-width:768px) {
 
@@ -1552,10 +1553,72 @@ a {
     }
 
     .card .textdiv {
-
         margin-inline: auto;
-
     }
+
+    .card .brand_img {
+        display: none;
+    }
+
+    .card .brand_img_1 {
+        display: none;
+    }
+
+    .card .brand_img_2 {
+        display: none;
+    }
+
+    .card .brand_img_3 {
+        display: none;
+    }
+
+    /* jio logo */
+.jio-logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-left: 42%;
+    align-items: center;
+}
+
+.imgFlex {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally in the container */
+  }
+
+  .imgFlex img {
+    width: 100%;
+    margin-bottom: 1.5rem; /* Add margin between images for spacing */
+  }
+
+/* uc logo */
+.uc-logo {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+    align-items: center;
+}
+
+/* hoc logo */
+.hoc-logo {
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* obc logo */
+.obc-logo {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+    align-items: center;
+}
 
     .featured-projects {
         margin-inline: 1rem;
@@ -1577,6 +1640,10 @@ a {
 
     .imgDiv img {
         border-radius: 1.25rem;
+    }
+
+    .readMoreBtn .button2 {
+        display: none;
     }
 
     .footer {
@@ -1603,6 +1670,12 @@ a {
 
     .footer .title-1 {
         font-size: 20px;
+    }
+
+    .scroll-to-top {
+        position: absolute;
+        bottom: 57px;
+        right: 18px;
     }
 
     .aboutSec {
