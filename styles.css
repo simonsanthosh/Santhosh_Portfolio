@@ -1697,6 +1697,10 @@ a {
         border-radius: 20px;
       }
 
+      .experiencepoints {
+      text-align: center;
+      }
+
     .footer {
         padding: 1rem;
     }
