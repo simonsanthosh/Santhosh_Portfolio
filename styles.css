@@ -958,6 +958,10 @@ a {
     background: linear-gradient(to bottom, #ffbccd, #e1c0f7);
 }
 
+.tooltip {
+    display: none;
+}
+
 .footer {
     margin-top: 8rem;
     background-color: #F4F4F4;
