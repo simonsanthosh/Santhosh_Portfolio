@@ -891,6 +891,20 @@ a {
     padding-top: 20px;
 }
 
+.imgDiv1 {
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    border-radius: 1.25rem;
+}
+
+.imgDiv1 img {
+    width: 300%; /* Adjust width to fill the container */
+    height: 700px; /* Maintain aspect ratio */
+    border-radius: 1.25rem;
+    position: relative; /* Position the image relative to its container */
+    top: 58px;
+    left: -480px;
+}
 
 .card .textdiv {
     margin-inline: 1.65rem;
