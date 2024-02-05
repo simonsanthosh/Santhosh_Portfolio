@@ -891,6 +891,22 @@ a {
     padding-top: 20px;
 }
 
+.imgDivv {
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    border-radius: 1.25rem;
+}
+
+.imgDivv img {
+    width: 300%; /* Adjust width to fill the container */
+    height: 900px; /* Maintain aspect ratio */
+    border-radius: 1.25rem;
+    position: relative; /* Position the image relative to its container */
+    top: 10px;
+    left: -820px;
+}
+
+
 .imgDiv1 {
     overflow: hidden; /* Hide overflowing content */
     position: relative;
@@ -899,10 +915,10 @@ a {
 
 .imgDiv1 img {
     width: 300%; /* Adjust width to fill the container */
-    height: 700px; /* Maintain aspect ratio */
+    height: 800px; /* Maintain aspect ratio */
     border-radius: 1.25rem;
     position: relative; /* Position the image relative to its container */
-    top: 58px;
+    top: 10px;
     left: -480px;
 }
 
