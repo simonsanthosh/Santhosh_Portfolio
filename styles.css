@@ -1564,6 +1564,15 @@ a {
         font-size: 16px;
     }
 
+    .imgDivv img {
+        width: 300%; /* Adjust width to fill the container */
+        height: 900px; /* Maintain aspect ratio */
+        border-radius: 1.25rem;
+        position: relative; /* Position the image relative to its container */
+        top: 3px;
+        left: -580px;
+    }
+
     .footer .highlight {
         font-size: 14px;
     }
