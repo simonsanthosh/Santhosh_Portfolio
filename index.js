@@ -166,7 +166,7 @@ elementsToChangeColor.forEach((element) => {
 
   btn1.addEventListener('click', function () {
       // Set the URL you want to open in the modal
-      var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FII0UHlhWmOlKd9HLNarfNq%2FVANDALUR_ZOO_APP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D56-377%26viewport%3D192%252C302%252C0.14%26t%3DaCkGWEGVUsgZkHAA-1%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A2%26mode%3Ddesign';
+      var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FERUozRgIX5986VSsDZVzvL%2FIntellemo_AI_OCL_UI%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D6-2%26viewport%3D252%252C1183%252C0.06%26t%3DwrA3hF2VaIWA0CBd-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D6%253A2%26mode%3Ddesign';
       modalIframe.src = url;
 
       // Display the modal
