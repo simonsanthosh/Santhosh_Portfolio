@@ -151,29 +151,30 @@ elementsToChangeColor.forEach((element) => {
   });
 });
 
-//modals for view prototype
-  var modal = document.getElementById('myModal');
-  var btn1 = document.getElementById('protobut');
-  var btn2 = document.getElementById('protobut1');
-  var btn3 = document.getElementById('protobut2');
-  var btn4 = document.getElementById('protobut3');
-  var btn5 = document.getElementById('protobut4');
-  var btn6 = document.getElementById('protobut5');
-  var btn7 = document.getElementById('protobut6');
-  var btn8 = document.getElementById('protobut7');
-  var closeModalBtn = document.getElementById('closeModal');
-  var modalIframe = document.getElementById('modalIframe');
+// modals for view prototype //
+var btn1 = document.getElementById('protobut');
+var btn2 = document.getElementById('protobut1');
+var btn3 = document.getElementById('protobut2');
+var btn4 = document.getElementById('protobut3');
+var btn5 = document.getElementById('protobut4');
+var btn6 = document.getElementById('protobut5');
+var btn7 = document.getElementById('protobut6');
+var btn8 = document.getElementById('protobut7');
+var modal = document.getElementById('modalproto');
+var modalIframe = document.getElementById('modalIframe');
+var closeBtn = document.querySelector('.closee');
 
-  btn1.addEventListener('click', function () {
-      // Set the URL you want to open in the modal
-      var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FERUozRgIX5986VSsDZVzvL%2FIntellemo_AI_OCL_UI%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D6-2%26viewport%3D252%252C1183%252C0.06%26t%3DwrA3hF2VaIWA0CBd-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D6%253A2%26mode%3Ddesign';
-      modalIframe.src = url;
+btn1.addEventListener('click', function () {
+    // Set the URL you want to open in the modal
+    var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FERUozRgIX5986VSsDZVzvL%2FIntellemo_AI_OCL_UI%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D6-2%26viewport%3D252%252C1183%252C0.06%26t%3DwrA3hF2VaIWA0CBd-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D6%253A2%26mode%3Ddesign';
+    modalIframe.src = url;
 
-      // Display the modal
-      modal.style.display = 'block';
-  });
+    // Display the modal
+    modal.style.display = 'block';
+});
 
-  btn2.addEventListener('click', function () {
+
+btn2.addEventListener('click', function () {
     // Set the URL you want to open in the modal
     var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLVljkzeNTPXOwZNbAz2FbQ%2FPricing-Plans%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1249-63%26viewport%3D-6743%252C2955%252C0.17%26t%3D8leX5Qzx2jQwvr05-1%26scaling%3Dscale-down%26starting-point-node-id%3D1249%253A63%26show-proto-sidebar%3D1%26mode%3Ddesign';
     modalIframe.src = url;
@@ -232,22 +233,17 @@ btn8.addEventListener('click', function () {
   var url = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLBt29DDPLXEspv1v532ceC%2FHOUSE_OF_COMICS%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D47-383%26viewport%3D277%252C64%252C0.06%26t%3DSGGzUQZHO04bRpOn-1%26scaling%3Dcontain%26starting-point-node-id%3D3%253A2%26mode%3Ddesign';
   modalIframe.src = url;
 
-  // Display the modal
-  modal.style.display = 'block';
+})
+
+// Close the modal when clicking the close button
+closeBtn.addEventListener('click', function () {
+  modal.style.display = 'none';
 });
 
-  closeModalBtn.addEventListener('click', function () {
-      // Close the modal when the close button is clicked
+// Close modal when clicking outside of it
+window.addEventListener('click', function (event) {
+  if (event.target === modal) {
       modal.style.display = 'none';
-      // Reset the iframe src to stop the video/audio (if applicable)
-      modalIframe.src = '';
-  });
-
-  // Close the modal if the overlay is clicked
-  window.addEventListener('click', function (event) {
-      if (event.target === modal) {
-          modal.style.display = 'none';
-          modalIframe.src = '';
-      }
-  });
+  }
+});
   
