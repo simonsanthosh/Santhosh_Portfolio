@@ -497,21 +497,15 @@
     </div>
   </nav>
 
-  <!-- Modal container for prototype -->
-<div id="myModal" class="modals">
-  <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+  <div id="modalproto" class="modals">
+    <div class="modal-content1">
+      <span class="closee">&times;</span>
+      <iframe id="modalIframe" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
-</div>
 
+<!--pdf modal for case studies-->
 <script>
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
-</script>
-
-  <script>
     function openPDFModal(pdfUrl) {
       // var pdfUrl = "./assets/laptopImg.png";
       // var pdfUrl = "http://docs.google.com/gview?url=http://drive/u/0/my-drive/Rigved's Resume (1).pdf&embedded=true";
@@ -538,7 +532,7 @@
       modalContent.onclick = function (event) {
         event.stopPropagation();
       }
-    }
+}
 
     document.getElementsByClassName('caseStudyOne')[0].addEventListener('click', () => openPDFModal('./assets/Intellemo_AI_Presentation.pdf'));
     document.getElementsByClassName('caseStudyTwo')[0].addEventListener('click', () => openPDFModal('./assets/Intellemo__Billing_&_Payment_Presentation.pdf'));
@@ -553,6 +547,8 @@
     document.getElementsByClassName('caseStudyElven')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229835/Presentations/11_hkbapx.png'));
     document.getElementsByClassName('caseStudyTwelve')[0].addEventListener('click', () => openPDFModal('https://res.cloudinary.com/dqet71eiu/image/upload/v1691229827/Presentations/12_e66ypj.png'));
 </script>
+
+<!--close modal for pdf case studies-->
 <script>
 document.getElementById('closeModal').addEventListener('click', () => {
   var modalOverlay = document.getElementById("modal-overlay");
@@ -581,8 +577,6 @@ document.getElementById('closeModal').addEventListener('click', () => {
 });
 </script>
 
-
-  </script>
   
 <!-- Include Plyr script -->
 <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
