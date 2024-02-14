@@ -1430,34 +1430,6 @@ a {
         transform: scale(0.1);}
 }
 
-/* Styles for the modal and overlay for view prototype */
-.modals {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 35px;
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
-}
 
 /* Additional styling for the button */
 .button {
@@ -1481,7 +1453,37 @@ a {
 }
 
 /* --------------------------------------------------------------*/
-
+@media screen and (min-width: 768px){
+    /* Styles for the modal and overlay for view prototype */
+    .modals {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .close {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    }
+/*---------------------------------------------------*/
 @media screen and (max-width:768px) {
 
     .body {
