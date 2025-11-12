@@ -22,16 +22,6 @@
 
 .loader-content {
     text-align: center;
-    animation: fadeInUp 0.8s ease;
-}
-
-.loader-logo {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #DC143C;
-    font-family: 'Libre Baskerville', serif;
-    margin-bottom: 2rem;
-    animation: pulse 2s ease-in-out infinite;
 }
 
 .loader-progress-container {
@@ -40,7 +30,7 @@
     background: rgba(220, 20, 60, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
 }
 
 .loader-progress-bar {
@@ -52,51 +42,12 @@
     box-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
 }
 
-.loader-text {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
-    animation: fadeInOut 2s ease-in-out infinite;
-}
-
 @keyframes loadProgress {
     0% {
         width: 0%;
     }
     100% {
         width: 100%;
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 0.8;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1;
     }
 }
 
