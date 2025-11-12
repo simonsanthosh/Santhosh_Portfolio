@@ -3,6 +3,9 @@
     const loader = document.getElementById('pageLoader');
     const body = document.body;
 
+    // Add loading class to hide content
+    body.classList.add('loading');
+
     // Prevent scrolling while loading
     body.style.overflow = 'hidden';
 
@@ -27,6 +30,8 @@
                 // Remove loader from DOM after animation
                 setTimeout(() => {
                     loader.remove();
+                    // Remove loading class to make content visible
+                    body.classList.remove('loading');
                     // Trigger content animations
                     revealContent();
                 }, 500);
@@ -50,6 +55,7 @@
                     section.style.opacity = '0';
                     section.style.transform = 'translateY(30px)';
                     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    section.style.visibility = 'visible';
 
                     // Trigger animation
                     setTimeout(() => {

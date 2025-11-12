@@ -51,6 +51,16 @@
     }
 }
 
+/* Hide content while loading */
+body.loading .navbar,
+body.loading .main,
+body.loading #works,
+body.loading .about,
+body.loading .footer {
+    opacity: 0;
+    visibility: hidden;
+}
+
 /* Content fade-in animation */
 .content-section {
     opacity: 0;
