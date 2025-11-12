@@ -52,25 +52,19 @@
 }
 
 /* Hide content while loading */
-body.loading .navbar,
-body.loading .main,
-body.loading #works,
-body.loading .about,
-body.loading .footer {
+body.loading > *:not(#pageLoader) {
     opacity: 0;
     visibility: hidden;
 }
 
-/* Content fade-in animation */
-.content-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+/* Blur effect after loading */
+body.blur-reveal {
+    filter: blur(20px);
+    transition: filter 1s ease-out;
 }
 
-.content-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+body.clear {
+    filter: blur(0px);
 }
 
 html,

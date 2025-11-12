@@ -30,42 +30,19 @@
                 // Remove loader from DOM after animation
                 setTimeout(() => {
                     loader.remove();
-                    // Remove loading class to make content visible
+                    // Remove loading class and add blur
                     body.classList.remove('loading');
-                    // Trigger content animations
-                    revealContent();
+                    body.classList.add('blur-reveal');
+
+                    // Clear blur after a moment
+                    setTimeout(() => {
+                        body.classList.remove('blur-reveal');
+                        body.classList.add('clear');
+                    }, 100);
                 }, 500);
             }
         }, 2000); // Show loader for at least 2 seconds
     });
-
-    // Reveal content sections one by one
-    function revealContent() {
-        const sections = [
-            document.querySelector('.navbar'),
-            document.querySelector('.main'),
-            document.querySelector('#works'),
-            document.querySelector('.about'),
-            document.querySelector('.footer')
-        ];
-
-        sections.forEach((section, index) => {
-            if (section) {
-                setTimeout(() => {
-                    section.style.opacity = '0';
-                    section.style.transform = 'translateY(30px)';
-                    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    section.style.visibility = 'visible';
-
-                    // Trigger animation
-                    setTimeout(() => {
-                        section.style.opacity = '1';
-                        section.style.transform = 'translateY(0)';
-                    }, 50);
-                }, index * 150); // Stagger animations by 150ms
-            }
-        });
-    }
 })();
 
 const rowOne = document.getElementsByClassName('rowOne')[0];
